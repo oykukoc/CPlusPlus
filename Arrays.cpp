@@ -1,6 +1,9 @@
 #include <iostream>
 using namespace std;
 
+double averageOfGrades(double x , double y){
+        return x / y;
+}
 int main(){
 
     int array1[3] = {10,20,30};
@@ -28,8 +31,7 @@ int main(){
         total += grades[i];
     }
     
-    double averageOfGrades = total / gradesLength;
-    cout << averageOfGrades << endl;
+    cout << averageOfGrades(total,gradesLength) << endl;
 
     // Find the max value
     int numbers[5];
