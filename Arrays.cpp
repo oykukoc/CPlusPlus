@@ -1,9 +1,11 @@
 #include <iostream>
 using namespace std;
+template <typename T>
 
-double averageOfGrades(double x , double y){
-        return x / y;
+T averageOfGrades(T x ,T y){
+        return (x / y);
 }
+
 int main(){
 
     int array1[3] = {10,20,30};
@@ -23,7 +25,7 @@ int main(){
     double grades[5] ;
     double total = 0 ;
 
-    int gradesLength = sizeof(grades) / sizeof(grades[0]);
+    double gradesLength = sizeof(grades) / sizeof(grades[0]);
 
     for(int i = 0 ; i < gradesLength ; i++){
         cout << "Please enter the grades:" << endl;
