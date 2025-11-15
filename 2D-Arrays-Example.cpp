@@ -15,13 +15,14 @@ int main(){
 
     cout << "\nMatrix:" << endl;
     for(int i = 0 ; i < 2 ; i++){
+        cout << endl;
         for(int j = 0; j < 3 ; j++){
-            cout << matrix[i][j] << endl;
+            cout << matrix[i][j] << " ";
             sum += matrix[i][j];
         }
     }
 
-    cout << "The sum is : " << sum  ;
+    cout << "\nThe sum is : " << sum  ;
 
     return 0;
 }
