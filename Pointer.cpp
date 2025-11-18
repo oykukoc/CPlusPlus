@@ -10,6 +10,14 @@ int main(){
     int a = 10;
     int* p = &a; // p, a'nın adresini tutuyor.
 
+    int x = 42;
+    int* p1 = &x;
+    int* p2 = p1;
+
+    cout << "value of x: " << x << endl;
+    *p2 = 100;
+    cout << "new value of x: " << x << endl;
+
     int num = 5;
 
     cout << "the value of a: " << a << endl;
