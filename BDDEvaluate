@@ -7,8 +7,8 @@ struct BDD_Node{
     BDD_Node* high_ptr;
 };
 
-BDD_Node* low_ptr = new BDD_Node{-1, nullptr, nullptr}; //False
-BDD_Node* high_ptr = new BDD_Node{-2, nullptr, nullptr}; //True
+BDD_Node* t_false = new BDD_Node{-1, nullptr, nullptr}; //False
+BDD_Node* t_true = new BDD_Node{-2, nullptr, nullptr}; //True
 
 int evaluate(BDD_Node* root, const std::map<int,bool>& assignments){
     if (root -> variable_index < 0){
