@@ -1,0 +1,27 @@
+#include <map>
+#include <iostream>
+
+struct BDD_Node{
+    int variable_index ;
+    BDD_Node* low_ptr;
+    BDD_Node* high_ptr;
+};
+
+BDD_Node* low_ptr = new BDD_Node{-1, nullptr, nullptr}; //False
+BDD_Node* high_ptr = new BDD_Node{-2, nullptr, nullptr}; //True
+
+int evaluate(BDD_Node* root, const std::map<int,bool>& assignments){
+    if (root -> variable_index < 0){
+        return (root -> variable_index == -2) ? 1 : 0;
+    }
+
+    int var_id = root -> variable_index;
+
+    bool value = assignments.at(var_id);
+
+    if(value == true){
+        return evaluate(root -> high_ptr, assignments);
+    }else{
+        return evaluate(root -> low_ptr, assignments);
+    }
+}

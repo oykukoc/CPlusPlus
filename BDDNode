@@ -1,0 +1,12 @@
+#include <iostream>
+
+struct BDD_Node{
+    
+    int variable_index;
+    BDD_Node* low_ptr;
+    BDD_Node* high_ptr;
+
+};
+
+BDD_Node* t_false = new BDD_Node{-1, nullptr, nullptr};
+BDD_Node* t_true = new BDD_Node{-2 , nullptr, nullptr};
