@@ -50,4 +50,6 @@ public:
         
             cout << "Result : " << (current == BDD_One ? 1: 0) << endl;
 
+        
+        return 0;
 }
