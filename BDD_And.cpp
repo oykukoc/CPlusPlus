@@ -8,7 +8,7 @@ public:
         BDDNode* low;
         BDDNode* high;
 
-        BDDNode(int var, BDDNode* low, BDDNode* high){
+        BDDNode(int v, BDDNode* l, BDDNode* h){
            this -> var = var;
            this ->low = low;
            this -> high = high;
