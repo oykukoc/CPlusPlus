@@ -9,9 +9,9 @@ public:
         BDDNode* high;
 
         BDDNode(int v, BDDNode* l, BDDNode* h){
-           this -> var = var;
-           this ->low = low;
-           this -> high = high;
+           this -> var = v;
+           this ->low = l;
+           this -> high = h;
         }
     };
 
